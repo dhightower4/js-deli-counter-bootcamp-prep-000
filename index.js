@@ -15,7 +15,7 @@ function nowServing(array) {
 function currentLine(array) {
   var position = [];
   for (let i = 0; i < array.length; ++i) {
-      position.push(`${i + 1}. ` + `${array[i]}`) }
+      position.push(` ` +[i+1]+. ` + `${array[i]}`) }
     if (array.length > 0) {
       return `The line is currently: ` +  `${position}`
     } else { return `The line is currently empty.`}
